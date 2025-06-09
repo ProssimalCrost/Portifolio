@@ -1,30 +1,58 @@
-import { Grid, styled} from "@mui/material"
+import { Container, Grid, styled, Typography} from "@mui/material"
 import Avatar from "../../../../assets/imagens/avatar.jpg"
+import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Hero = () => {
 
     const StyledHero = styled("div")(() => ({
-         backgroundColor: "black"
+         backgroundColor: "black",
+         height: "100vh"
     }))
 
      const Styledimg = styled("img")(() => ({
-        width: "60%",
-        borderRadius: "50%"
+        width: "100%",       
+        maxWidth: "250px",   
+        borderRadius: "50%",
+        display: "flex",
+        margin: "0 auto",
     }))
 
 
   return (
    <>
     <StyledHero>
-       <Grid container spacing={2}>
-        <Grid size={4}>
-            <Styledimg src={Avatar} alt="" />
-        </Grid>
-        <Grid size={8}>
-            size=4
-        </Grid>
-        </Grid>
-        
+        <Container>
+            <Grid container spacing={4} alignItems="center">
+
+                <Grid item xs={12} md={4}>
+                    <Styledimg src={Avatar} alt="" />
+                </Grid>
+
+                <Grid item xs={12} md={8}>
+                    <Typography color="primary" variant="h1" textAlign="center">Theylon Augusto</Typography>
+                    <Typography color="primary" variant="h2" textAlign="center">Engenheiro de Software</Typography>
+
+                    <Grid container alignItems="center">
+                        <Grid item xs={12} md={6}>
+                            <button>
+                                <SimCardDownloadIcon fontSize="medium"/>
+                                DOWNLOAD CV
+                            </button>
+                        </Grid>
+                        <Grid item xs={12} md={6}>
+                            <button>
+                                <EmailIcon/>
+                                ME CONTATE
+                            </button>
+                        </Grid>
+
+                    </Grid>
+                   
+                    
+                </Grid>
+                </Grid>
+        </Container>
     </StyledHero>
 
    </>
