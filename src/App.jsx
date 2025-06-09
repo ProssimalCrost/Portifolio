@@ -1,10 +1,11 @@
-import './pages/Home'
+
+import Home from './pages/Home/Home'
 
 const App = () => {
     return (
     <div>
-      ola
-      <Home/>
+      
+     <Home/>
     </div>
   )}
 export default App
