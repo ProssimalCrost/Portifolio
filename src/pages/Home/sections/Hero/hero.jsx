@@ -33,14 +33,14 @@ const Hero = () => {
                     <Typography color="primary" variant="h1" textAlign="center">Theylon Augusto</Typography>
                     <Typography color="primary" variant="h2" textAlign="center">Engenheiro de Software</Typography>
 
-                    <Grid container alignItems="center">
-                        <Grid item xs={12} md={6}>
+                    <Grid container >
+                        <Grid item xs={12} md={6} display="flex" justifyContent="center">
                             <button>
                                 <SimCardDownloadIcon fontSize="medium"/>
                                 DOWNLOAD CV
                             </button>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={6} display="flex" justifyContent="center">
                             <button>
                                 <EmailIcon/>
                                 ME CONTATE
