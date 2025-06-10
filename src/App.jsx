@@ -1,5 +1,5 @@
-
-import Home from './pages/Home/Home'
+import Home from './pages/Home/Home';
+import '@fontsource/bebas-neue'; 
 
 const App = () => {
     return (
