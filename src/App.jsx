@@ -1,11 +1,18 @@
 import Home from './pages/Home/Home';
-import '@fontsource/bebas-neue'; 
+import AnimatedBackground from './assets/components/background';
+import '@fontsource/bebas-neue';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+import theme from './theme';
 
 const App = () => {
-    return (
-    <div>
-      
-     <Home/>
-    </div>
-  )}
-export default App
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Home />
+      </ThemeProvider>
+    </>
+  );
+};
+
+export default App;
