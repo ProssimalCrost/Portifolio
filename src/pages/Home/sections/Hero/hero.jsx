@@ -7,7 +7,8 @@ const Hero = () => {
 
     const StyledHero = styled("div")(() => ({
          backgroundColor: "black",
-         height: "100vh"
+         height: "100vh",
+         paddingTop: "10px"
     }))
 
      const Styledimg = styled("img")(() => ({
