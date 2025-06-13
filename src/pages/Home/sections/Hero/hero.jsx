@@ -1,5 +1,5 @@
 import { Container, Grid, styled, Typography, Button, Box} from "@mui/material"
-import Avatar from "../../../../assets/imagens/avatar.jpg"
+import Avatar from "../../../../assets/imagens/avatarnb.png"
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 import EmailIcon from '@mui/icons-material/Email';
 
@@ -21,7 +21,7 @@ const Hero = () => {
     const Styledimg = styled("img")(() => ({
         width: "100%",       
         maxWidth: "300px",   
-        borderRadius: "30%",
+        borderRadius: "10%",
         display: "flex",
         margin: "0 auto",
         border:'1px solid ${theme.palette.primary.contrastText}'
@@ -34,14 +34,11 @@ const Hero = () => {
     <StyledHero>
         <Container sx={{ backgroundColor: 'transparent' }}>
             <Grid container spacing={2} display="flex" justifyContent="center">
-
-                <Grid item xs={12} md={5}>
-                    <Box position="relative">
-
-                    </Box>
+                
+                <Grid item xs={12} md={5}>                 
                     <Styledimg src={Avatar} alt="" />
                 </Grid>
-
+                        
                 <Grid item xs={12} md={7} container direction="column" spacing={2}>
                     <Typography color="primary" variant="h1" textAlign="center">
                         Theylon Augusto
@@ -49,6 +46,7 @@ const Hero = () => {
                     <Typography color="secondary" variant="h2" textAlign="center">
                         Engenheiro de Software
                     </Typography>
+                
 
                     <Grid container item spacing={3} justifyContent="center">
                         <Grid item>
@@ -76,7 +74,6 @@ const Hero = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-
                 </Grid>
             
         </Container>

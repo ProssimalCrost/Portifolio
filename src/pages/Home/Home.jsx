@@ -1,12 +1,14 @@
 import AnimatedBackground from "../../assets/components/background"
+import NavBar from "../../assets/components/NavBar/Navbar"
 import Hero from "./sections/Hero/hero"
 
 const Home = () => {
 
   return (
    <>
-     <AnimatedBackground/>
+    <AnimatedBackground/>
     <Hero/>
+    <NavBar/>
    </>
 
   )}
