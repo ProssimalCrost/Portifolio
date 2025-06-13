@@ -1,1 +1,2 @@
-Portifólio feito em React e .Net
+Portifólio feito em React 
+Uma preve apresentação como proficional
