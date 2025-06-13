@@ -14,9 +14,8 @@ const Hero = () => {
          display: "flex",
          alignItems: "center",
          position: 'fixed',  
-         zIndex: 0,
+         
     }))
-
 
     const Styledimg = styled("img")(() => ({
         width: "100%",       
@@ -28,6 +27,20 @@ const Hero = () => {
         
     }))
 
+    const handleDownload = () => {
+        const link = document.createElement('a')
+        link.href = 'public/Theylon_Siqueira_currículoSOFT.pdf',
+        link.download = 'curriculo.pdf',
+        link.click();
+    }
+
+    const Whatsapp = () => {
+      const phone = "5531935005003"
+      const message = "Vamo codar juntos!";
+      const link = `https://api.whatsapp.com/send/?phone=5531935005003&text=vamo+codar+juntos%21&type=phone_number&app_absent=0`
+      window.open(link)
+    }
+
 
   return (
    <>
@@ -35,11 +48,11 @@ const Hero = () => {
         <Container sx={{ backgroundColor: 'transparent' }}>
             <Grid container spacing={2} display="flex" justifyContent="center">
                 
-                <Grid item xs={12} md={5}>                 
+                <Grid  xs={12} md={5}>                 
                     <Styledimg src={Avatar} alt="" />
                 </Grid>
                         
-                <Grid item xs={12} md={7} container direction="column" spacing={2}>
+                <Grid  xs={12} md={7} container direction="column" spacing={2}>
                     <Typography color="primary" variant="h1" textAlign="center">
                         Theylon Augusto
                     </Typography>
@@ -47,8 +60,7 @@ const Hero = () => {
                         Engenheiro de Software
                     </Typography>
                 
-
-                    <Grid container item spacing={3} justifyContent="center">
+                    <Grid container spacing={3} justifyContent="center">
                         <Grid item>
                         <Button
                             variant="contained"
@@ -56,11 +68,11 @@ const Hero = () => {
                             size="large"
                             startIcon={<SimCardDownloadIcon />}
                             sx={{ minWidth: 200 }}
+                            onClick={handleDownload }
                         >
                             DOWNLOAD CV
                         </Button>
                         </Grid>
-
                         <Grid item>
                         <Button
                             variant="outlined"
@@ -68,6 +80,7 @@ const Hero = () => {
                             size="large"
                             startIcon={<EmailIcon />}
                             sx={{ minWidth: 200 }}
+                            onClick={Whatsapp}
                         >
                             ME CONTATE
                         </Button>

@@ -173,7 +173,7 @@ const AnimatedBackground = () => {
         height: '100%',
         zIndex: 1,
         backgroundColor: 'transparent',
-        display: 'block',
+       // display: 'block',
         pointerEvents: 'none'
       }}
     />

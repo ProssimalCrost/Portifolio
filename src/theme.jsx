@@ -11,7 +11,7 @@ let theme = createTheme({
       main: '#6F08EF',
     },
     secondary: {
-      main: '#3090F0',
+      main: '#00e1ff',
     },
     accent: {
       main: '#F50CE5', 

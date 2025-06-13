@@ -1,4 +1,4 @@
-import AnimatedBackground from "../../assets/components/background"
+import AnimatedBackground from "../../assets/components/Animation/background"
 import NavBar from "../../assets/components/NavBar/Navbar"
 import Hero from "./sections/Hero/hero"
 

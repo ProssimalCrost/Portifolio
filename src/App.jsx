@@ -1,5 +1,5 @@
 import Home from './pages/Home/Home';
-import AnimatedBackground from './assets/components/background';
+import AnimatedBackground from './assets/components/Animation/background';
 import '@fontsource/bebas-neue';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import theme from './theme';
@@ -7,7 +7,7 @@ import theme from './theme';
 const App = () => {
   return (
     <>
-      <ThemeProvider theme={theme}>
+       <ThemeProvider theme={theme}>
       <CssBaseline />
       <Home />
       </ThemeProvider>
