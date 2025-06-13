@@ -2,6 +2,7 @@ import { Container, Grid, styled, Typography, Button, Box} from "@mui/material"
 import Avatar from "../../../../assets/imagens/avatarnb.png"
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 import EmailIcon from '@mui/icons-material/Email';
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Hero = () => {
 
@@ -13,7 +14,7 @@ const Hero = () => {
          paddingTop: "1px",
          display: "flex",
          alignItems: "center",
-         position: 'fixed',  
+         position: 'relative',  
          
     }))
 
@@ -44,6 +45,7 @@ const Hero = () => {
 
   return (
    <>
+   <ParallaxProvider>
     <StyledHero>
         <Container sx={{ backgroundColor: 'transparent' }}>
             <Grid container spacing={2} display="flex" justifyContent="center">
@@ -91,7 +93,7 @@ const Hero = () => {
             
         </Container>
     </StyledHero>
-
+    </ParallaxProvider>
    </>
 
   )}
