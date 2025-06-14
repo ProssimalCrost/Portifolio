@@ -5,7 +5,7 @@ import '@fontsource/raleway';
 
 
 
-let theme = createTheme({
+export let theme = createTheme({
   palette: {
     primary: {
       main: '#6F08EF',

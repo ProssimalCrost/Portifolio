@@ -17,16 +17,25 @@ const StyledMenuItem = styled(MenuItem)({
 
 
 const NavBar = () => {
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <AppBar position="absolute" color="transparent" elevation='0' >
       <StyledToolbar>
-        <StyledMenuItem>ABOUT</StyledMenuItem>
-        <StyledMenuItem>SKILLS</StyledMenuItem> 
-        <StyledMenuItem>PROJECTS</StyledMenuItem>  
+        <StyledMenuItem onClick={() => scrollToSection('about')}>ABOUT</StyledMenuItem>
+        <StyledMenuItem onClick={() => scrollToSection('skills')}>SKILLS</StyledMenuItem> 
+        <StyledMenuItem onClick={() => scrollToSection('projects')}>PROJECTS</StyledMenuItem>  
         
       </StyledToolbar>
     </AppBar>
   )
-}
+};
+
 
 export default NavBar
