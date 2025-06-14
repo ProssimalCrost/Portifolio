@@ -30,7 +30,7 @@ const Hero = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = 'public/Theylon_Siqueira_currículoSOFT.pdf',
+        link.href = '/Theylon_Siqueira_currículo.pdf',
         link.download = 'curriculo.pdf',
         link.click();
     }
