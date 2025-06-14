@@ -2,9 +2,6 @@ import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import '@fontsource/bitter';
 import '@fontsource/raleway';
 
-
-
-
 export let theme = createTheme({
   palette: {
     primary: {

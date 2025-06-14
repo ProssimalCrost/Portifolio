@@ -15,6 +15,10 @@ const StyledMenuItem = styled(MenuItem)({
   },
 });
 
+const GitHub = () => {
+  const link = `https://github.com/ProssimalCrost`
+  window.open(link)
+}
 
 const NavBar = () => {
 
@@ -30,7 +34,7 @@ const NavBar = () => {
       <StyledToolbar>
         <StyledMenuItem onClick={() => scrollToSection('about')}>ABOUT</StyledMenuItem>
         <StyledMenuItem onClick={() => scrollToSection('skills')}>SKILLS</StyledMenuItem> 
-        <StyledMenuItem onClick={() => scrollToSection('projects')}>PROJECTS</StyledMenuItem>  
+        <StyledMenuItem onClick={(GitHub) }>GITHUB</StyledMenuItem>  
         
       </StyledToolbar>
     </AppBar>
