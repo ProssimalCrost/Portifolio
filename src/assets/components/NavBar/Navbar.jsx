@@ -1,4 +1,8 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -20,6 +24,11 @@ const GitHub = () => {
   window.open(link)
 }
 
+const linkedin = () => {
+  const link = `https://www.linkedin.com/in/theylon-siqueira-44a327257/`
+  window.open(link)
+}
+
 const NavBar = () => {
 
   const scrollToSection = (id) => {
@@ -32,9 +41,21 @@ const NavBar = () => {
   return (
     <AppBar position="absolute" color="transparent" elevation='0' >
       <StyledToolbar>
-        <StyledMenuItem onClick={() => scrollToSection('about')}>ABOUT</StyledMenuItem>
-        <StyledMenuItem onClick={() => scrollToSection('skills')}>SKILLS</StyledMenuItem> 
-        <StyledMenuItem onClick={(GitHub) }>GITHUB</StyledMenuItem>  
+
+        <StyledMenuItem onClick={(linkedin)}>
+           <LinkedInIcon sx={{ mr: 1 }} />
+            linkedin
+          
+        </StyledMenuItem>
+
+        <StyledMenuItem onClick={() => scrollToSection('skills')}>
+            SKILLS
+        </StyledMenuItem> 
+
+       <StyledMenuItem onClick={(GitHub)}>
+        <GitHubIcon sx={{ mr: 1 }}/>
+          GITHUB
+        </StyledMenuItem>  
         
       </StyledToolbar>
     </AppBar>
