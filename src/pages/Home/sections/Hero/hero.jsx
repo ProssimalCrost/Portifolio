@@ -42,6 +42,9 @@ const Hero = () => {
       window.open(link)
     }
 
+    const hi = () => {
+        return hi
+    }
 
   return (
    <>
