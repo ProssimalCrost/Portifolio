@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Typography, Box, styled } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
+import AnimatedBackground from "../../../assets/components/Animation/background";
 
 const Skills = () => {
   const StyledSkills = styled("div")(({ theme }) => ({
@@ -41,7 +42,9 @@ const Skills = () => {
   ];
 
   return (
-    <StyledSkills>
+    
+    <StyledSkills id="skills">
+      <AnimatedBackground/>
       {/* 🔹 Transição suave no TOPO */}
       <Box
         sx={{
@@ -50,7 +53,7 @@ const Skills = () => {
           left: 0,
           width: "100%",
           height: "100px",
-          background: "linear-gradient(to top, transparent, #1a0225ff, #000000ff)",
+          background: "linear-gradient(to top, transparent, #310357ff, #141414ff)",
           pointerEvents: "none",
         }}
       />
