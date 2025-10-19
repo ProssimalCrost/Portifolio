@@ -53,7 +53,7 @@ const Skills = () => {
           left: 0,
           width: "100%",
           height: "100px",
-          background: "linear-gradient(to top, transparent, #310357ff, #141414ff)",
+          background: "linear-gradient(to top, transparent, #2c034bff, #260342ff)",
           pointerEvents: "none",
         }}
       />
@@ -77,13 +77,13 @@ const Skills = () => {
             custom={0}
           >
             <Typography
-              variant="h4"
+              variant="h1"
               gutterBottom
-              sx={{ color: "white", fontWeight: 800 }}
+              sx={{ color: "white", fontWeight: 800,  fontSize: "4rem" }}
             >
-              Skills
+              SKILLS
             </Typography>
-            <Typography variant="body1" sx={{ color: "white", mb: 6 }}>
+            <Typography variant="body1" sx={{ color: "white", mb: 6,  fontSize: "4rem", fontWeight: 500 }}>
               Tecnologias e ferramentas que domino:
             </Typography>
           </Grid>
@@ -107,7 +107,7 @@ const Skills = () => {
                   fontWeight: 800,
                   transition: "all 0.3s ease",
                   "&:hover": {
-                    backgroundColor: "#1f1f1f",
+                    backgroundColor: "#b909b0ff",
                     transform: "translateY(-4px)",
                     borderColor: "#6f08ef",
                   },
