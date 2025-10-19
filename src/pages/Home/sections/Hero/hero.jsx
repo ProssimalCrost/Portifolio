@@ -3,7 +3,6 @@ import Avatar from "/public/imagens/avatarnb.png"
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 import EmailIcon from '@mui/icons-material/Email';
 import { ParallaxProvider } from "react-scroll-parallax";
-import TheylonAugustoDesenvolvedor from '/public/assets/TheylonAugustoDesenvolvedor.pdf'
 
 const Hero = () => {
 
@@ -31,7 +30,7 @@ const Hero = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = 'TheylonAugustoDesenvolvedor.pdf',
+        link.href = '/TheylonAugustoDesenvolvedor.pdf',
         link.download = 'curriculo.pdf',
         link.click();
     }
