@@ -1,5 +1,5 @@
 import { Container, Grid, styled, Typography, Button, Box} from "@mui/material"
-import Avatar from "../../../../assets/imagens/avatarnb.png"
+import Avatar from "/public/imagens/avatarnb.png"
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 import EmailIcon from '@mui/icons-material/Email';
 import { ParallaxProvider } from "react-scroll-parallax";

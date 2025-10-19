@@ -3,6 +3,7 @@ import AnimatedBackground from "../../assets/components/Animation/background"
 import NavBar from "../../assets/components/NavBar/Navbar"
 import Hero from "./sections/Hero/hero"
 import theme from "../../theme"
+import Skills from "./skills/skills"
 
 
 const Home = () => {
@@ -11,9 +12,11 @@ const Home = () => {
    <>
     <AnimatedBackground/>
     <NavBar/>
+    
 
     <section id="hero">
     <Hero/>
+    <Skills/>
     </section>
 
     {/* <ThemeProvider theme={theme}> 

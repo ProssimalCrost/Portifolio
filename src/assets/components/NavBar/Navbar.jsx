@@ -29,6 +29,10 @@ const linkedin = () => {
   window.open(link)
 }
 
+const ski = () => {
+  scrollToSection('skills');
+}
+
 const NavBar = () => {
 
   const scrollToSection = (id) => {
@@ -48,7 +52,7 @@ const NavBar = () => {
           
         </StyledMenuItem>
 
-        <StyledMenuItem onClick={() => scrollToSection('skills')}>
+        <StyledMenuItem onClick={(ski) => scrollToSection('skills')}>
             SKILLS
         </StyledMenuItem> 
 
