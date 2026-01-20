@@ -30,7 +30,7 @@ const Hero = () => {
 
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = '/TheylonAugustoDesenvolvedor.pdf',
+        link.href = '/Theylon_Eng_Software_FullStack.pdf',
         link.download = 'curriculo.pdf',
         link.click();
     }
